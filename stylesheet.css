@@ -1,0 +1,706 @@
+/* RESET */
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, a, article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+    /* Cancel out some differences between browser defaults */
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+* {
+    /* The width of an element will be the size of its border box, not its content box (which is the normal default). */
+    box-sizing: border-box;
+}
+
+/* General */
+
+nav, aside, footer {
+    padding: 1em;
+}
+
+h1 {
+	font-family: 'Offside';
+	font-weight: 700;	
+	font-size: 1.52rem;
+	margin-bottom: 1.2rem;
+	margin-left: 1.2rem;
+	padding-top: 8rem;
+}
+
+h2 {
+	font-family: 'Offside';
+	font-weight: 700;	
+	font-size: 1.3rem;
+	margin: 0 1.2rem;
+	padding: 1.2rem 0;
+}
+
+h3 {
+	font-family: 'Offside';
+	font-weight: 700;	
+	font-size: 1.2rem;
+	margin-top: 2.1rem;
+	margin-bottom: 0.7rem;
+}
+
+body {	
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 500;
+	font-size: 1.08rem;
+	line-height: 1.5;
+}
+
+p {
+	margin-left: 1.2rem;
+	margin-right: 1.2rem;
+}
+
+#intro-text {
+	background-color: #e4f1fe;
+	margin-bottom: 0;
+	padding-bottom: 1.4rem;
+}
+
+/* Navigation */
+.topnav {
+  overflow: hidden;
+  background-color: #c1d3fe;
+  position: sticky;
+	top: 0px;
+	z-index: 1;
+}
+
+#logo {
+	height: 2.9rem;
+	margin-left: 0.5rem;
+}
+
+/* Hiding menu */
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: black;
+  padding: 1.05rem 0.9rem;
+  text-decoration: none;
+  display: block;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	font-size: 1.12rem;
+}
+
+
+.topnav a.icon {
+	color: black;
+  background: #c1d3fe;
+  display: block;
+  position: absolute;
+
+	font-size: 2rem;
+  right: 0;
+  top: 0;
+	margin-right: 0.5rem;
+}
+
+#myLinks a:hover {
+  background-color: #edf2fb;
+  color: black;
+}
+
+.active {
+  background-color: #edf2fb; 
+	color: black;
+}
+
+/* Landing Page */
+
+.video-container {
+	margin: 0 1.2rem;
+	margin-bottom: 2.6rem;
+}
+
+
+.img-container {
+  position: relative;
+  text-align: center;
+  color: white;
+	background-color: #c1d3fe;	
+}
+
+.light {
+	background-color: #edf2fb;	
+}
+
+.img-txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	font-size: 1.9rem;
+	margin: 0;
+	
+}
+
+.img-front-page {
+	width:100%;
+	border-radius: 70%;
+	height: 15rem;
+}
+
+/* Footer */
+
+.links {
+	
+	color: #82acff;
+}
+
+footer {
+	text-align: center;
+}
+
+#map {
+	margin: auto;
+  height: 19rem; /* The height is 400 pixels */
+  width: 98%; /* The width is the width of the web page */
+		
+}
+
+.more-line-space {
+	margin-top: 1.5rem;
+}
+
+/* About Us Page*/
+
+.icons {
+	color: #c3195d;
+}
+
+.test {
+	height: 4rem;
+	width: 4rem;
+	
+}
+
+#test-div {
+	display: flex;
+}
+
+.h1-main-body {
+	padding-top: 4rem;
+	margin-bottom: 1.2rem;
+}
+
+.h2-main-body {
+	padding-top: 1.9rem;
+	padding-bottom: 0.8rem;
+}
+
+.p-main-body {
+	margin-bottom: 1.5rem;
+}
+
+.alternate-background {
+	background-color: #e4f1fe;
+	padding-bottom: 0.2rem;
+}
+
+.important-names {
+	font-style: italic;
+}
+
+.p-main-body-two {
+	margin-bottom: 1.9rem;
+}
+
+/* Support for Parents Page */
+
+.video-container-two {
+	margin: 0 1.2rem;
+	margin-bottom: 2.3rem;
+} 
+
+li {
+	margin: 0rem 1.2rem 1.5rem 2.4rem;
+}
+
+.h2-main-body-two {
+	padding-top: 1.5rem;
+}
+
+/* Care of Your Baby Page */
+
+.h2-main-body-three {
+	padding-top: 1.7rem;
+}
+
+.h2-main-body-four {
+	padding-top: 1.8rem;
+
+}
+
+/* Search New Terms Page */
+
+#userInput {
+  background-image: url('./images/search-icon.png');
+  background-position: 10px 12px;
+	background-size: 1.2rem 1.2rem;
+  background-repeat: no-repeat;
+  width: 88%;
+  font-size: 20px;
+  padding: 12px 20px 12px 40px;
+  border: 3px solid #d59bf6;
+	margin: 0.5rem 1.2rem 1rem 1.2rem;
+  
+}
+
+.medicalHeading {
+	font-weight: bold;
+}
+
+.medicalTermSection {
+	border: 1px solid #c1d3fe;
+  margin: 1rem 1rem 1.7rem 1.2rem;
+  padding: 1rem 0rem;
+	display: block;
+	background-color: #e4f1fe;
+}
+
+.p-main-body-three {
+	margin-bottom: 1.4rem;
+}
+
+/* Our Team Page */
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: white;
+  color: #444;
+  cursor: pointer;
+  padding: 15px;
+  width: 88%;
+  text-align: left;
+	border: none;
+  border-bottom: 3.5px solid #c1d3fe;
+  outline: none;
+  transition: 0.4s;
+	margin: 0rem 1.2rem;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.3rem;
+	
+	
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.activeAccordian, .accordion:hover {
+  background-color: #e4f1fe;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 15px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.activeAccordian:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/* Notices Page Slide Show */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+	margin-bottom: 1.9rem;
+	
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #c1d3fe;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #edf2fb;
+	
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  margin: 0 9px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.activeDot, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Notices Page Modal*/
+
+#noticeOne {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#noticeOne:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 92%;
+  max-width: 700px;
+}
+
+/* Add Animation */
+.modal-content {  
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform: scale(0.1)} 
+  to {transform: scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+	
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.overall-container {
+	margin: 1.5rem 0.5rem;
+}
+
+.main-point {
+	font-weight: bold;
+	font-size: 1.02rem;
+}
+
+/* Edit I */
+
+.video {
+	width: 98%;
+	height: 13rem;
+}
+
+.p-video {
+	padding-bottom: 1.6rem;
+}
+
+
+
+/* RESPONSIVENESS */
+
+@media screen and (min-width: 29rem) {
+	
+	.video {
+		height: 16rem;
+	}
+	
+	.img-front-page {
+		height: 18rem;
+		width: 96%;
+	}
+}
+
+@media screen and (min-width: 34rem) {
+
+	.video {
+		height: 18rem;
+	}
+	
+	.img-front-page {
+		height: 18rem;
+		width: 94%;
+	}
+	
+	#map {
+  height: 20rem;
+	}
+	
+	h1 {
+		font-size: 1.6rem;
+	}
+	
+	h2 {
+		font-size: 1.4rem;
+	}
+	
+	body {
+		padding: 1.2rem;
+		font-size: 1.15rem;
+	}
+	
+	#logo {
+	height: 4.5rem;
+	margin-left: 0.8rem;
+	}
+
+	.topnav a.icon {
+		font-size: 3rem;
+	}
+	
+}
+
+@media screen and (min-width: 39rem) {
+
+	.video {
+		height: 20rem;
+	}
+	
+	.img-front-page {
+		height: 20rem;
+		width: 90%;
+	}
+	
+	#map {
+  height: 20rem;
+	}
+}
+
+@media screen and (min-width: 44rem) {
+	
+	.video {
+		height: 24rem;
+	}
+	
+	.img-front-page {
+		height: 22rem;
+		width: 88%;
+		border-radius: 90%;
+	}
+	
+	#map {
+  height: 23rem;
+	}
+	
+	h1 {
+		font-size: 1.7rem;
+	}
+	
+	h2 {
+		font-size: 1.5rem;
+	}
+	
+	body {
+		padding: 1.2rem;
+		font-size: 1.3rem;
+	}
+}
+
+@media screen and (min-width: 53rem) {
+	
+	.video {
+		height: 28rem;
+		width: 98%
+	}
+	
+	.img-front-page {
+		height: 22rem;
+		width: 84%;
+		border-radius: 90%;
+	}
+	
+	#map {
+  height: 25rem;
+	}
+	
+	body {
+		padding: 1.5rem;
+	}
+}
+
+@media screen and (min-width: 60rem) {
+	
+	.video {
+		height: 28rem;
+		width: 96%;
+	}
+	
+	.img-front-page {
+		height: 23rem;
+		width: 74%;
+		border-radius: 70%;
+	}
+	
+	#map {
+  height: 28rem;
+	}
+	
+	body {
+		padding: 1.8rem;
+		display: grid;
+		grid-template-columns: 1fr 56rem 1fr;
+	}
+	
+	.topnav {
+		grid-column: 1/4;
+	}
+	
+	main, footer {
+		grid-column: 2;
+	}
+	
+	.topnav a.icon {
+		display: none;
+	}
+	
+	.topnav #myLinks {
+		display: flex;
+		align-items: center;	
+		justify-content: center;
+	}
+	
+	.topnav {
+		display: flex;
+		height: 5rem;		
+	}
+
+	.topnav a {		
+		font-size: 0.8rem;
+	}
+	
+	#logo {
+	height: 2.9rem;
+	margin-left: 0.7rem;
+	}
+}
+
+@media screen and (min-width: 71rem) {
+
+	.topnav a {
+		padding: 1.05rem 1rem;
+	}
+	
+}
+
+@media screen and (min-width: 76rem) {
+	
+	.topnav a {
+		font-size: 0.9rem;
+	}
+	
+}
+
+@media screen and (min-width: 84rem) {
+	
+	.topnav a {
+		font-size: 1rem;
+		padding: 1.05rem 1.1rem;
+	}
+}
+
+@media screen and (min-width: 93rem) {
+	
+	.topnav a {
+		font-size: 1.1rem;
+		padding: 1.05rem 1.1rem;
+	}
+}
+
+@media screen and (min-width: 97rem) {
+	
+	.topnav a {
+		font-size: 1.2rem;
+		padding: 1.05rem 1.2rem;
+	}
+	
+	.topnav {
+		height: 5.1rem;		
+	}
+
+	body {
+		grid-template-columns: 1fr 18rem 56rem 18rem 1fr;
+	}
+	
+	.topnav {
+		grid-column: 2/5;
+	}
+	
+	main, footer {
+		grid-column: 3;
+	}
+}

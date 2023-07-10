@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Canterbury Neonatal Service - The Road Home</title>  
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">   	
+	<link href='https://fonts.googleapis.com/css?family=Offside' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>	
+	<link rel="stylesheet" href="stylesheet.css">
+	<script src="https://kit.fontawesome.com/66c5181835.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="index.html" id="logo-link"><img src="./images/logo.png" alt="logo" id="logo"></a>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+		<a href="index.html">Home</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="supportforparents.html">Support for Parents</a>
+    <a href="careofyourbaby.html">Care of Your Baby</a>
+    <a href="ourteam.html">Our Team</a>
+    <a href="visitingpolicy.html">Visiting Policy</a>
+    <a href="theroadhome.html" class="active" style="color: black;">The Road Home</a>
+    <a href="notices.html">Notices</a>
+    <a href="learnnewterms.html">Learn New Terms</a>    
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="openNavMenu()">
+    <i onclick="openCloseButton(this)" class="fa fa-bars"></i>
+  </a>
+</div>
+<main>
+	<div>
+		<h1 class="h1-main-body">The Road Home</h1>
+		<p class="p-main-body">The Neonatal Discharge and Outreach Service is a team of Clinical Nurse Specialists. For some babies, the ‘Road to Home’ can be longer than others, and our goal is to ensure you are comfortable when it is time to take your baby home.</p>
+		<p class="p-main-body">If your baby has continuing medical needs after they leave the Neonatal Unit, such as home oxygen or tube feeding, our Discharge Team will provide all necessary education and supplies. The Outreach team further supports you and your baby at home as needed.</p>
+	</div>
+	<div class="alternate-background">
+		<h2 class="h2-main-body">Preparing for Discharge Video</h2>
+		<p class="p-video">The video below provides information about when your baby is ready for discharge. Play the video, then display the video in <span class="main-point">full-screen mode</span> for a better viewing experience.</p>
+		<div class="video-container">		
+			<iframe class="video" src="https://www.youtube.com/embed/_6dA6tunQp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		</div>
+	</div>
+	<div>
+		<h2 class="h2-main-body-two">Discharge Planning & Neonatal Outreach</h2>
+		<p class="p-main-body">When babies/p&emacr;pi born very preterm reach 34-36 weeks corrected gestation or those with complex needs getting ready to be discharged from the hospital, Canterbury Neonatal Service introduces our Discharge Planning nurses to the family. The Discharge Planning nurses work through the discharge needs of each baby with the family/wh&amacr;nau.</p>
+		<p class="p-main-body">The Discharge Facilitators issue a <a href="./download/taking-your-baby-home.pdf" download class="links">“Road to Home” pamphlet</a> to families. This pamphlet consists of several cue boxes used for discussion with the parents regarding preparation for discharge, home readiness for the baby, and ongoing follow-up. It is a valuable tool as it contributes to a smooth transition home.</p>
+		<p class="p-main-body">Before the discharge date, our service introduces the Outreach Nurses to the family/wh&amacr;nau of the baby/p&emacr;pi​​ being discharged from the service. It is important that all support mechanisms and future appointments are in place so that the transition to home goes as smoothly as possible. Once our service discharges the baby to the home/kainga, the Outreach Nurse will visit both baby/p&emacr;pi​​ and family/wh&amacr;nau​ for as long as necessary.</p>
+		<p class="p-main-body">Parents are encouraged to spend 24-48 hours living in the hospital with their baby/babies just before discharge. This eases the transfer to home and is an opportunity to consolidate feeding and caring for their baby. Timing will depend on space availability. We have six parent rooms available.</p>
+		<p class="p-main-body" style="margin-bottom: 0.4rem;">Once stabilised in the hospital environment, our service will discharge babies with Neonatal Abstinence Syndrome into their home/kainga environment. The Outreach Nurses will visit and monitor these babies regularly. This type of approach fosters a more contented baby and family.</p>			
+	</div>
+</main>
+<footer>
+	<p>________________</p>
+	<h3>Hours</h3>
+	<p>Parents are welcome 24/7.</p>
+	<p>Visiting times vary, please contact us before visiting.</p>
+	<h3>Contact us</h3>
+	<p><a href="tel:033654699" class="links">03 364 4699</a></p>
+	<p><a href="cdhb.health.nz/nicu" class="links">cdhb.health.nz/nicu</a></p>
+	<h3>Address</h3>
+	<p>Neonatal Intensive Care Unit</p>
+	<p>4th Floor</p>
+	<p>Christchurch Women&apos;s Hospital</p>
+	<p>Riccarton Avenue</p>
+	<p>Christchurch</p>
+	<h3>Location</h3>
+	<div id="map"></div>
+	<p class="more-line-space"><a href="https://www.cdhb.health.nz/hospitals-health-facilities/christchurch-womens-hospital/" class="links">Christchurch Women&apos;s Hospital</a></p>
+	<p class="more-line-space"><a href="https://www.cdhb.health.nz/hospitals-health-facilities/christchurch-hospital/?tab=2" class="links">Parking Nearby</a></p>
+	<p class="more-line-space"><a href="./download/christchurch-hospital-map.pdf" download class="links">Download Map</a></p>
+	<p style="margin: 1.5rem 0 0.7rem;">________________</p>
+	<p style="font-size: 0.7rem;" >Designed by Erica Li.</p>
+</footer>
+<script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+        ({key: "AIzaSyBrAtzpOFBfsLlIsVW1MD02bpiJaK2LcdI", v: "beta"});</script>
+</body>
+</html>
+	<script src="app.js"></script>
+</body>
+</html>
